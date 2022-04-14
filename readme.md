@@ -1,5 +1,7 @@
 # How to: Create Visual Studio templates
 
+![title](assets/Templates.png)
+
 Creating applications in an organization or for developers working outside of a team, using a standard Visual Studio solution template makes sense. Why create a new project in Visual Studio time and time again from a base solution and add projects. At some point something changes in say one out of ten projects now this can cause problems.
 
 #  There are several options
