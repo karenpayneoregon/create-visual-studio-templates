@@ -1,4 +1,4 @@
-﻿namespace Oed.EntityFrameworkCoreHelpers.Interfaces
+﻿namespace EntityFrameworkCoreHelpers.Interfaces
 {
     public interface IBase
     {

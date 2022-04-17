@@ -4,7 +4,7 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Reflection;
 
-namespace Oed.EntityFrameworkCoreHelpers.Classes
+namespace EntityFrameworkCoreHelpers.Classes
 {
     /// <summary>
     /// Extension method for EF Core, written with EF Core 5 tested

@@ -13,7 +13,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Class projects", "Class pro
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BaseClassProject", "BaseClassProject\BaseClassProject.csproj", "{B40B5755-366F-4FAE-97E8-9276E1DA70AC}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Oed.EntityFrameworkCoreHelpers", "Oed.EntityFrameworkCoreHelpers\Oed.EntityFrameworkCoreHelpers.csproj", "{D6579EAF-5590-4C65-91BF-3A600FCF73E6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EntityFrameworkCoreHelpers", "Oed.EntityFrameworkCoreHelpers\EntityFrameworkCoreHelpers.csproj", "{D6579EAF-5590-4C65-91BF-3A600FCF73E6}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Unit Test", "Unit Test", "{C7C7E8C2-6DF5-4771-8194-BFA11679DB0C}"
 EndProject

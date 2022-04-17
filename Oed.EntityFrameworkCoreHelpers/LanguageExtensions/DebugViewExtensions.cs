@@ -3,7 +3,7 @@ using System.Linq;
 using System.Text;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 
-namespace Oed.EntityFrameworkCoreHelpers.LanguageExtensions
+namespace EntityFrameworkCoreHelpers.LanguageExtensions
 {
     /// <summary>
     /// Extension methods for assisting in both learning EF Core and debugging.

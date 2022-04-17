@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
 
-namespace Oed.EntityFrameworkCoreHelpers.LanguageExtensions
+namespace EntityFrameworkCoreHelpers.LanguageExtensions
 {
     public static class DbContextExtensions
     {

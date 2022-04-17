@@ -14,7 +14,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <ProjectReference Include="..\Oed.EntityFrameworkCoreHelpers\Oed.EntityFrameworkCoreHelpers.csproj" />
+	  <ProjectReference Include="..\Oed.EntityFrameworkCoreHelpers\EntityFrameworkCoreHelpers.csproj" />
 	</ItemGroup>
 
 	<ItemGroup>

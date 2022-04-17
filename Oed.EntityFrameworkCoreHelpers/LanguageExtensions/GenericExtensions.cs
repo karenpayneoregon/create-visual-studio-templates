@@ -1,10 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 
-
-
-
-namespace Oed.EntityFrameworkCoreHelpers.LanguageExtensions
+namespace EntityFrameworkCoreHelpers.LanguageExtensions
 {
     public static class GenericExtensions
     {

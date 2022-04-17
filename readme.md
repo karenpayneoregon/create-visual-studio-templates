@@ -2,7 +2,26 @@
 
 ![title](assets/Templates.png)
 
-Creating applications in an organization or for developers working outside of a team, using a standard Visual Studio solution template makes sense. Why create a new project in Visual Studio time and time again from a base solution and add projects. At some point something changes in say one out of ten projects now this can cause problems.
+Creating applications in an organization or for developers working outside of a team, using a standard Visual Studio solution template makes sense. 
+
+Why create a new project in Visual Studio time and time again from a base solution and add projects. At some point something changes in say one out of ten projects now this can cause problems.
+
+What is the definition of a standard Visual Studio standard template? One which has a common structure.
+
+For those teams/developers who work with files constantly, the standard solution would contain startup code for working with files.
+
+For those teams/developers working with data operations may have class projects to assist with data.
+
+Considerations on top of the above, include unit test project. Also, setting up common code in Visual Studio solution folders[^1].
+
+Also consider using NuGet packages from NuGet or local NuGet feeds when code is proprietary meaning code in a package should not be shared outside of the organization and/or the sole developer.
+
+One last thing to consider, added a Git markdown file named [readme.md](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes) for documenting each project.
+
+
+## Important
+
+Make sure to read [this](Requires.md) if using this solution as a template.
 
 #  There are several options
 
@@ -30,25 +49,25 @@ Another project for data operations with standard local NuGet packages for conne
 
 # Steps to create a solution template
 
-Figure out what needs to be in the solution template and local NuGet packages where packages in  a team environment are accessible to all team members. Even without a team consider creating a folder the local machine for allowing testing without other developers attempting to use unfinished work or possibly unstable code.
+- Figure out what needs to be in the solution template and local NuGet packages where packages in  a team environment are accessible to all team members. Even without a team consider creating a folder the local machine for allowing testing without other developers attempting to use unfinished work or possibly unstable code.
 
-Next, create empty solution and a source code repository for the solution.
+- Next, create empty solution and a source code repository for the solution.
 
-Add each project under appropriate solution folders.
+- Add each project under appropriate solution folders.
 
-Perform unit test and code reviews.
+- Perform unit test and code reviews.
 
-Now its time to create a project template for each project in the solution as outlined [here](https://docs.microsoft.com/en-us/visualstudio/ide/how-to-create-project-templates?view=vs-2019).
+- Now its time to create a project template for each project in the solution as outlined [here](https://docs.microsoft.com/en-us/visualstudio/ide/how-to-create-project-templates?view=vs-2019).
 
-When performing the export, un-check the option to copy each exported project to the default template folder, only allow exporting to `My Templates'.
+- When performing the export, un-check the option to copy each exported project to the default template folder, only allow exporting to `My Templates'.
 
-Create a folder under the current solution named `Templates`.
+- Create a folder under the current solution named `Templates`.
 
-Unzip each of the exported project templates under the `Templates` folder.
+- Unzip each of the exported project templates under the `Templates` folder.
 
-Select a .ico (icon file for the solution template) and place at the root of the `Templates` folder.
+- Select a .ico (icon file for the solution template) and place at the root of the `Templates` folder. The icon file should easily represent the solution.
 
-In the root folder of the `Templates' folder create a new text file named `root.vstemplate`.
+- In the root folder of the `Templates' folder create a new text file named `root.vstemplate`.
 
 Add each project to the file. Using this current solution as an example we will have.
 
@@ -115,11 +134,18 @@ Create a new project, in the search input type in either the first part of the t
 
 ![image](assets/createNew.png)
 
-# :red_circle: Important
+# See also
 
-Make sure to read [this](Requires.md) if using this solution as a template.
+[Custom Visual Studio 2019 project templates](https://github.com/karenpayneoregon/vs2019-custom-project-templates)
+
+A repository for base projects for .NET 5, C#9 which can be exported as templates and used from Visual Studio. These templates will also work in newer versions of Visual Studio.
 
 # Closing
 
-What has been presented is a simple Visual Studio template where much more is possible dependent on what is best for a developer or a team of developers.
+- What has been presented is a simple Visual Studio template where much more is possible dependent on what is best for a developer or a team of developers.
+- In some cases I've noticed if a new project is added to a newly created solution it's added one folder higher than the solution but if you close the solution, reopen the same solution and add a new project the project is properly placed into the solution folder.
 
+
+[^1]: Visual Studio Solution Folders? In Visual Studio, you can add virtual folders to group and organize your projects and files. Folders can be nested, collapsed, expanded, and even hidden in the Solution Explorer. Please keep in mind that these folders are entirely virtual. That means that you will still have to physically organize your projects the way you prefer in your file system.
+
+A nice benefit to Solution folders is using Scope to. Using this option, we can select any project and then only this project will be visible in Solution Explorer. You can select a particular project or a folder from Solution Explorer. To remove a scoped view click the left (back) arrow at the top of Solution Explorer.

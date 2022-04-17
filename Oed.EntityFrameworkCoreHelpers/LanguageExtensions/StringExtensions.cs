@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Oed.EntityFrameworkCoreHelpers.LanguageExtensions
+namespace EntityFrameworkCoreHelpers.LanguageExtensions
 {
     public static class StringExtensions
     {

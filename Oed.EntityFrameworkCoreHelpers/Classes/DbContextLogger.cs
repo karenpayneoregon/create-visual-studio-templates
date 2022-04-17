@@ -1,7 +1,7 @@
 ﻿using System;
 using System.IO;
 
-namespace Oed.EntityFrameworkCoreHelpers.Classes
+namespace EntityFrameworkCoreHelpers.Classes
 {
     /// <summary>
     /// For logging messages from DbContext.

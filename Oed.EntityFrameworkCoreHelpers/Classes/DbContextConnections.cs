@@ -1,14 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Diagnostics;
 using ConfigurationLibrary.Classes;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
 
-namespace Oed.EntityFrameworkCoreHelpers.Classes
+namespace EntityFrameworkCoreHelpers.Classes
 {
     public class DbContextConnections
     {
